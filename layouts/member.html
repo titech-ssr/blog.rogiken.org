@@ -1,0 +1,49 @@
+<% render '/page-base.*' do %>
+<article>
+	<h1><i class="fa fa-user"></i> <%= member_year %> / <%= h @item[:title] %></h1>
+	<aside>
+		<!--div style="display: flex"-->
+		<div>
+			<% if icon = @item[:icon] %>
+				<!--div style="margin: 0.5em"-->
+				<div class="col-sm-2 col-xs-3">
+					<img src="<%= icon %>" alt="icon" style="width:100%; height:auto" />
+				</div>
+			<% end %>
+			<div class="col-sm-10 col-xs-9">
+				<% if twitter = @item[:twitter] %>
+					<p>
+						<% if twitter.kind_of?(Array) %>
+							<i class="fa fa-twitter"></i>
+							<%= twitter.map{|account|
+								"<a href=\"https://twitter.com/#{account}\">@#{account}</a>"
+							}.join(' / ') %>
+						<% else %>
+							<a href="https://twitter.com/<%= twitter %>">
+							<i class="fa fa-twitter"></i>
+							@<%= twitter %></a>
+						<% end %>
+					</p>
+				<% end %>
+				<% if github = @item[:github] %>
+					<p>
+						<a href="https://github.com/<%= github %>">
+						<i class="fa fa-github"></i>
+						@<%= github %></a>
+					</p>
+				<% end %>
+				<% if web = @item[:web] %>
+					<p>
+						<a href="<%= h web %>">
+						<i class="fa fa-home"></i>
+						<%= web %></a>
+					</p>
+				<% end %>
+			</div>
+		</div>
+		<div style="clear: both"></div>
+	</aside>
+	<hr />
+	<%= yield %>
+</article>
+<% end %>

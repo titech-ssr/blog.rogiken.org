@@ -1,0 +1,31 @@
+<% if authors = @target_item[:authors] %>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		authors
+	</div>
+	<div class="list-group">
+		<% authors.each do |author| %>
+			<% year,author_name,variation = author_year_name_variation(author) %>
+			<% author_item = @items["/members/#{year}/#{author_name}.*"] %>
+			<% screen_name = author_item[:title] || author_name %>
+			<% variation ||= 'default' %>
+			<a class="list-group-item" href="<%= "/members/#{year}/#{author_name}" %>">
+				<div>
+					<div class="col-sm-1 col-sm-2">
+						<img src="<%= author_item[:icon] %>" alt="icon" style="width: 100%; height: auto" />
+					</div>
+					<div class="col-sm-11 col-sm-10">
+						<h3 class="list-group-item-heading"><%= "#{year}/#{screen_name}" %></h3>
+						<div class="list-group-item-text">
+							<p>
+								<%= author_item[:bio][variation.to_sym] %>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div style="clear: both"></div>
+			</a>
+		<% end %>
+	</div>
+</div>
+<% end %>

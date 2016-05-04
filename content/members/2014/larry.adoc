@@ -1,0 +1,18 @@
+---
+title: "らりお"
+kind: member
+twitter:
+  - L16777216
+  - nu11p0_6477
+github: l1048576
+web: "http://blog.cardina1.red/"
+icon: "/members/2014/larry/natuha2_128x128.jpg"
+bio:
+  'default': '何とは言わない天然水飲みたい。Rustは良い言語。'
+  'syskan': 'その昔、シス管でした。'
+---
+
+{cpp}とRustを書く人。 +
+HTML/CSS/javascriptその他あらゆるテキスト手打ち勢。 +
+テキスト編集に使うのはもちろん**vim**。 +
+なぜなら彼もまた特別な存在だからです。
