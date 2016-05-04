@@ -35,7 +35,7 @@ compile '/assets/**/*.scss' do
   filter :relativize_paths, type: :css
 end
 
-compile '/members/*/*.adoc' do
+compile '/members/*/*/index.*' do
   filter :asciidoctor, linkcss: true
   filter :colorize_syntax, :default_colorizer => :pygmentsrb
   layout '/member.*'
@@ -133,8 +133,8 @@ route '/archives/**/*' do
   relpath
 end
 
-route '/members/**/*.adoc' do
-  @item.identifier.without_ext + '/index.html'
+route %r[/members/([0-9]+)/([^/]+)/index\.adoc] do |year, name|
+  "/members/#{year}/#{name}/index.html"
 end
 
 route '/**/*.{html,json}.erb' do

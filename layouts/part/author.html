@@ -6,7 +6,7 @@
 	<div class="list-group">
 		<% authors.each do |author| %>
 			<% year,author_name,variation = author_year_name_variation(author) %>
-			<% author_item = @items["/members/#{year}/#{author_name}.*"] %>
+			<% author_item = @items["/members/#{year}/#{author_name}/index.*"] %>
 			<% screen_name = author_item[:title] || author_name %>
 			<% variation ||= 'default' %>
 			<a class="list-group-item" href="<%= "/members/#{year}/#{author_name}" %>">
