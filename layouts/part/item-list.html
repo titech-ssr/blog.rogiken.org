@@ -18,7 +18,7 @@
 		<a class="list-group-item" href="<%= item.path %>">
 			<%= header_open_tag %><%= item[:title] %><%= header_close_tag %>
 			<div class="list-group-item-text">
-				<%= render '/part/created-at.*', target: item %>
+				<%= render '/part/created-at-without-anchors.*', target: item %>
 				<!-- a要素内部にa要素をネストすることはできないため、ここでhtagsを表示することはできない... -->
 				<%#= render '/part/htags.*', target: item %>
 				<% if excerpt = item[:excerpt] %>
