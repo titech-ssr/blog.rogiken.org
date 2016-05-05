@@ -20,7 +20,7 @@ module Larry
     end
 
     def member_year(item=@item)
-      /^\/members\/([0-9]+)\/.*$/.match(item.identifier.to_s).captures[0]
+      /^\/members\/(\d{4})\/.*$/.match(item.identifier.to_s).captures[0]
     end
 
   end
