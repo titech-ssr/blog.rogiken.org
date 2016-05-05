@@ -23,6 +23,10 @@ module Larry
       /^\/members\/(\d{4})\/.*$/.match(item.identifier.to_s).captures[0]
     end
 
+    def member_name(item=@item)
+      /^\/members\/\d{4}\/([^\/]+)\/.*$/.match(item.identifier.to_s).captures[0]
+    end
+
   end
 end
 
