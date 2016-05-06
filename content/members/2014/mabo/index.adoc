@@ -5,7 +5,6 @@ twitter:
   - mabo_207
   - mabo_game
 github: mabo207
-web: 
 icon: "/members/2014/mabo/mabo_icon.png"
 bio:
   'default': '部長のまーぼうです。'
