@@ -1,0 +1,15 @@
+---
+title: "まーぼう"
+kind: member
+twitter:
+  - mabo_207
+  - mabo_game
+github: mabo207
+icon: "/members/2014/mabo/mabo_icon.png"
+bio:
+  'default': '部長のまーぼうです。'
+  'game': 'RPG王国とCG-Square'
+---
+
+ゲーム、特にSRPGを作ってます。
+初心者なのでお手柔らかに。
