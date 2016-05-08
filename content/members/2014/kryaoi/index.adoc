@@ -1,0 +1,17 @@
+---
+title: "きりやあおい(陽気)"
+kind: member
+twitter:
+  - kryaoi
+github: 3tty0n
+icon: "/members/2014/kryaoi/hikamisumire.jpg"
+bio:
+  'default': 'きりやあおい(陽気)といいます。'
+  'aikatsu': 'アイカツ！が好きです。'
+---
+
+アイカツ！と関数型プログラミングが生きがい。 +
+よく書く言語はScalaで、HaskellやPythonなども嗜む。 +
+どちらかと言えばバックエンド寄りのことが好き。 +
+アイカツ！の中で一番思い入れがあるキャラは夏樹みくるさん。 +
+アイカツスターズ！もちゃんと見ていますよ。
