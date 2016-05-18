@@ -1,0 +1,18 @@
+---
+title: "けり"
+kind: member
+twitter:
+  - Ryokeri14
+github: kerikun11
+web: "http://kerikeri.top/"
+icon: "/members/2014/keri/keri_128x128.jpg"
+bio:
+  'default': '電子工作者．サーバー関係にも興味あり．'
+---
+
+横浜市立横浜サイエンスフロンティア高等学校3期卒業 +
+東京工業大学制御システム工学科 +
+rogy14 +
+回路講習会2015講師 +
+
+WiFiモジュールESP-WROOM-02を使おう． +
